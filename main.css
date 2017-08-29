@@ -1,0 +1,602 @@
+/*this design got ideas from carbon design system from 
+http://carbondesignsystem.com/components/button/code*/
+* {
+  box-sizing: border-box;
+}
+body.greyBK{
+	background: linear-gradient(to bottom, #e1e2e6, #ffffff);
+}
+body{
+	font-family: 'Gudea', sans-serif;
+}
+.grid{
+	display:flex;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.grid-item{	
+	margin:auto;
+}
+h1,.figcationLogo,#figcationLogo{
+	font-size:1.3em;
+	letter-spacing: 0.3em;
+	text-transform:uppercase;
+	text-align: center;
+}
+span{
+	letter-spacing: 0.15em;
+	color:#58595b;
+	font-kerning:normal;
+	font-weight: bolder;
+	font-style: italic;
+	text-align: center;
+	padding: 0.3em;
+}
+span.footage{
+	font-style: normal;
+	font-weight: 300;	
+}
+span#footer{
+	display: block;
+	background: linear-gradient(to bottom, #e1e2e6, #ffffff);
+	font-style: normal;
+	font-weight: 300;
+}
+p.sub{
+	padding: 1em;
+	/*box-shadow learnt from 
+	https://www.w3schools.com/css/css3_shadows.asp*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p{	
+	padding:2em;
+	text-align:left;
+	margin:auto;
+	font-size: 1em;
+	font-weight:100;
+	letter-spacing:0.1em;
+	word-spacing: 0.1em;
+	stroke-linecap:2em;
+	line-height:2em;
+	color:#58595b;
+	max-width: 500px;
+	min-width: 150px;
+	}
+ul{
+	list-style-type: none;
+}
+li{
+	margin:auto;
+}
+li a{
+	font-size: 0.7em;
+	color:#58595b;
+	text-transform: uppercase;
+	transition: 1s;
+}
+li a:hover{
+	letter-spacing:0.2em;
+	transition: 0.6s ease-in-out;
+}
+#homepageContainer{
+	position: relative;
+}
+.footage{
+	width:100%;
+	text-align: center;
+	/*learnt gradient color from 
+	https://www.w3schools.com/css/css3_gradients.asp*/
+	background: linear-gradient(to bottom, #e1e2e6, #ffffff);
+	margin-bottom: 0;
+	position:fixed;
+	bottom:0;
+	left:0;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover,a:active,a:visited{
+	opacity: 1;
+}
+img{
+	max-width: 60%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#top-nav{
+	writing-mode: horizontal-tb;
+	width:100%;
+	height:10%;
+}
+#left-nav{
+	writing-mode: vertical-lr;
+	width:20%;
+	height:80%;
+	
+}	
+#right-nav{
+	writing-mode:vertical-lr;
+	width:20%;
+	height:80%;
+	transform: rotate(180deg);
+}
+#bottom-nav{
+	writing-mode: horizontal-tb;
+	width:100%;
+	height:10%;
+
+}
+a.logo:hover,a#logo:hover{
+	animation-name:rotate20deg;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out 5s;
+	animation-fill-mode: both;
+}
+/*set location for page title ---------------*/
+div.nav{
+	background-color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width:100%;
+	height: 70px;
+	position: relative;
+}
+.logo{
+	max-width:80px;
+	padding: 0.2em;
+	position: absolute;
+	left:5%;
+}
+a#logo{
+	max-width: 80px;
+	display: block;
+	text-align: center;
+	padding-top:10px; 
+	background: black;
+}
+.figcationLogo{
+	color: white;
+	position: absolute;
+	right: 5%;
+	bottom:0;
+}
+#figcationLogo{
+	color: white;
+}
+/*home page -----------------------------------*/
+.homeCenter{
+	width:80%;
+	margin: auto;
+}
+#homePara{
+	z-index: 0;
+	position: relative;
+}
+#logowithbox{
+	width:50%;
+	max-width: 400px;
+	z-index: -1;
+	position: fixed;
+	left:40%;
+	top:26%;
+}
+#lInbox{
+	fill:pink;
+}
+#sInbox{
+	fill:#41d6c3;
+}
+/*dash offset which learnt from 
+https://css-tricks.com/svg-line-animation-works/*/
+#homebox{
+	fill:none;
+	stroke:#41d6c3;
+	stroke-dasharray:100;
+	animation:dash 8s linear;
+	animation-iteration-count: infinite;
+	/*stroke properties which learnt from 
+	https://www.w3schools.com/graphics/svg_stroking.asp*/
+	stroke-width:8px;
+	stroke-linecap: round;
+}
+@keyframes dash{
+	to{
+		stroke-dashoffset:1000;
+	}
+}
+.nav_link, h1{
+	color: #41d6c3;
+	transition: 1s;
+}
+.intext_link{
+	color:white;
+	background-color:#41d6c3; 
+	padding: 0.2em; 
+	transition: 1s;
+}
+/*learnt from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
+.nav_link:hover,.nav_link:visited,.nav_link:active{
+	letter-spacing: 1.2em;
+	transition: 0.8s ease-in-out;
+}
+.intext_link:hover,.intext_link:visited,.intext_link:active{
+	background-color: rgba(65, 214, 195,0.5);
+}
+.fadeinLeft{
+	animation-name: fadeinLeft;
+}
+.fadeinRight{
+	animation-name: fadeinRight;
+}
+.fadeinTop{
+	animation-name: fadeinTop;
+}
+.fadeinLeft, .fadeinRight,.fadeinTop{
+	animation-duration: 2s;
+	animation-iteration-count:1;
+	animation-timing-function: ease-in-out 1s;
+	animation-fill-mode: both;
+}
+/*learnt from https://css-tricks.com/add-page-transitions-css-smoothstate-js/*/
+@keyframes bdcolorChange{
+	from{
+		border-color:#41d6c3; 
+	}
+	to{
+		border-color:pink;
+	}
+}
+/*rotate svg which learnt from https://css-tricks.
+com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
+@keyframes rotate20deg{
+	0%{
+		transform: rotate(-20deg);
+	}
+	25%{
+		transform:rotate(0deg);
+	}
+	75%{
+		transform:rotate(20deg);
+	}
+	100%{
+		transform:rotate(-20deg);
+	}
+}
+/*https://www.tutorialspoint.com/css/css_animation_fade_in_left.htm*/
+@keyframes fadeinTop{
+
+	0%{
+		opacity: 0;
+		transform:translateY(-10em);
+	}
+
+	100%{
+		opacity: 1;
+		transform:translateY(0);
+	}
+}
+@keyframes fadeinRight{
+
+	0%{
+		opacity: 0;
+		transform:translateX(10em);
+	}
+
+	100%{
+		opacity: 1;
+		transform:translateX(0);
+	}
+}
+@keyframes fadeinLeft{
+
+	0%{
+		opacity: 0;
+		transform:translateX(-20em);
+	}
+
+	100%{
+		opacity: 1;
+		transform:translateX(0);
+	}
+}
+
+@keyframes moveHeight{
+	to {
+		transform: translateY(2000px);
+		opacity: 1;
+	}
+}
+.imageButton{
+	width:2.5em;
+	margin:1.5em auto;
+	fill:#41d6c3;
+	transition: 0.3s;
+	animation-name:rotate20deg;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out 5s;
+	animation-fill-mode: both;
+}
+/*works1 page--------------------------------------*/
+#worksContainer,#works2Container{
+	height: 100vh;
+}
+.downArrow{
+	background: rgba(255,255,255,1);
+	position: fixed;
+	bottom:0;
+	left:50%;
+	z-index: 100;
+}
+#broimage{
+	width:80%; 
+	margin:100px auto;
+	background-color: rgba(255, 192, 203,0.8);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.firstImage{
+	width:80%;
+	position: relative;
+	left:25%;
+	z-index: 9;
+}
+#secondImage{
+	width:80%;
+	position:absolute;
+	left:0;
+	bottom:-10%;
+	transform: translate(0,50%);
+	z-index: 9;
+}
+.thirdImage{
+	width:80%;
+	position:relative;
+	left:5%;
+	z-index: 9;
+}
+#fourthImage{
+	width:80%;
+
+	position: absolute;
+	left:-10%;
+	bottom:-50%;
+	transform: translate(0%,7%);
+	z-index: 9;
+}
+.thirdImage{
+	left:0;
+	bottom:-5%;
+}
+#fourthImage{
+	animation:moveUp;
+	animation-duration: 1.3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes moveUp{
+	to{
+		transform: translateX(17%);
+	}
+}
+/*works2 page --------------------*/
+#personaimage{
+	max-width:20%;
+	min-width: 200px;
+	display: flex;
+	margin:100px auto;
+	animation:scale;
+	animation-delay:2s;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+@keyframes scale{
+	0%{
+		transform: scale(0);
+	}
+/*	50%{
+		transform: scale(0.9);
+	}*/
+	100%{
+		transform: scale(1);
+	}
+}
+/*paoject2 page-----------------------------*/
+.toggle{
+	transition: 1s;
+	transform: scale(2);
+	display: block;
+	margin:auto;
+}
+.toggleImg{
+	width:auto;
+	height:200px;
+}
+#personaImg{
+	height:320px;
+}
+.bar,.bar2,.bar3{
+	margin-bottom: 2.2em;
+	background:pink;
+	border:1px solid pink;
+	animation:moveHeight;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	opacity: 0.5;
+}
+.bar{
+	width:10px;
+	height:150px;
+	margin-top: 7em;
+	margin-right: 8px;	
+}
+.bar2{
+	width:8px;
+	height:90px;
+	margin-top: 3em;
+	animation-delay: 2s;
+}
+.bar3{
+	margin-top: 5em;
+	width:9px;
+	height:130px;
+	margin-left:7px;
+	animation-delay: 1s;
+}
+.project2{
+	width:70%;
+	margin:auto;
+	align-items: center;
+}
+.project2 img{
+	width:350px;
+}
+.video{
+	width:60%;
+	height:auto;
+	margin-left:20%;
+}
+/*about page ___________________*/
+.persnoalInformation,.persnoalInformation2{
+	width:80%;
+	margin:100px auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media(max-width: 840px){
+	.persnoalInformation,.persnoalInformation2{
+		flex-wrap: wrap;
+	}
+}
+#iImage{
+	width:400px;
+}
+#iImage2{
+	height:250px;
+	display:block;
+	margin:auto;
+	box-shadow: none;
+}
+/*contact page----------------------*/
+.contact{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 10%;
+	width:60%;
+	position:relative;
+	border:0.7em groove pink;
+	animation:bdcolorChange;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out 2s;
+	animation-duration: 5s;
+}
+.bkgd{
+	background-color: pink;
+}
+@media(max-width: 900px){
+	.contact{
+		margin-top: 25%;
+		width:80%;	
+	}
+}
+#contactCaption{
+	width:40%;
+	position:absolute;
+	left:53%;
+	bottom:50%;
+}
+.indent{
+	position: absolute;
+	left:10%;
+}
+/*style page------------------------------*/
+#styleContainer{
+	width:70%;
+	margin:auto;
+}
+.font,.color,.button,.list,.footer,.box_shadow{
+	padding: 1em;
+	margin-top: 100px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.font{
+	margin-top: 3em;
+}
+.color .grid-item{
+	width:100px;
+	border:1px solid black;
+}
+#color1{
+	background-color: black;
+}
+#color2{
+	background-color:#58595b;	
+}
+#color3{
+	background-color:white;
+	color:#5a6872;
+}
+#color4{
+	background-color:#41d6c3;
+}
+#color5{
+	background-color:pink;
+}
+.black{
+	background-color: black;
+}
+#box{
+	width:100%;
+	height:50%;
+	padding: 1em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*project1 page------------------------------*/
+#project1Container,#project2Container{
+	width:90%;
+}
+.project1-image,#project1Image{
+	height:150px;
+	width:300px;
+}
+#project1Image{
+	display: block;
+	margin:auto;
+}
+.projectContent{
+	width:80%;
+	margin:auto;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-top:2px solid #e4e4e4;
+	margin-bottom:2em;
+}
+.projectContent img{
+	width:230px;
+	margin:0 auto;
+}
+.middle{
+	text-align: center;
+}
+.move{
+	position:relative;
+	left:47.55%;
+}
+/*citation page-----------------------------------*/
+div#citationContainer{
+	width:80%;
+	padding: 1em;
+	background-color: white;
+	margin:100px auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

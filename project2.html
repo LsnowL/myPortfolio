@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Project2</title> 
+		<meta charset="utf-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<link href="main.css" rel="stylesheet">
+		<link href="normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <!-- Toggle class learnt from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_toggleclass -->
+		<script>
+			$(document).ready(function(){
+			    $(".toggleImg,#personaImg").click(function(){
+			        $(this).toggleClass("toggle");
+			    });
+			});
+		</script>
+	</head>
+	<body class="greyBK" id="secondProject">
+		<!-- navigation bar start-->
+		<div class="grid nav">
+			<a class="logo" href="index.html#homepageContainer">
+				<img class="grid-item" src="img/logo.png" alt="myLogo">
+			</a>
+			<div class="figcationLogo">IAT 333</div>
+		</div>
+		<!-- navigation bar start-->
+		<!-- content start -->
+		<div class="grid">
+			<div id="project2Container">
+				<!-- link to back page -->
+				<a href="works2.html" class="move"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 class="imageButton" viewBox="0 0 339.177 339.177" xml:space="preserve">
+				<path d="M247.244,169.59l83.938-83.938c5.332-5.327,7.994-11.798,7.994-19.414c0-7.614-2.669-14.084-7.994-19.414L292.355,7.993
+					C287.026,2.665,280.556,0,272.944,0c-7.617,0-14.085,2.665-19.417,7.993L169.59,91.931L85.651,7.993
+					C80.325,2.665,73.854,0,66.237,0c-7.611,0-14.083,2.665-19.414,7.993L7.994,46.824C2.667,52.15,0,58.624,0,66.238
+					c0,7.616,2.664,14.084,7.994,19.414l83.937,83.938L7.994,253.528C2.667,258.859,0,265.327,0,272.945
+					c0,7.61,2.664,14.082,7.994,19.41l38.83,38.828c5.33,5.332,11.803,7.994,19.414,7.994c7.616,0,14.084-2.669,19.414-7.994
+					l83.939-83.938l83.944,83.938c5.328,5.332,11.793,7.994,19.417,7.994c7.611,0,14.082-2.669,19.411-7.994l38.82-38.828
+					c5.332-5.324,7.994-11.8,7.994-19.41c0-7.618-2.662-14.086-7.994-19.417L247.244,169.59z"/>
+					</svg>
+				</a>
+				<!-- back link end -->
+				<!-- second project start -->
+				<!-- 1st para start -->
+				<h1>About</h1>
+				<div class="projectContent wrap">
+					<!-- 1st para start -->
+					<p class="grid-item">
+						This is a group work in three persons totally for IAT 333 Interaction Design Methods class. It is to examine concepts of design practice and related design methods for interaction designers with <a class="intext_link" target="_blank" href="http://sfucheerleading.ca/">SFU Cheerleading</a>, a group to promote and expand the sport of cheerleading at all levels on and off the SFU campus community. <br><br>
+						The most of tasks were to do by our group members togeher. We usually came up with ideas individually in advance, and wrote down on Google document. Then we disccussed together on weekends. My role in this team mainly contributes to observe target users, collect data, get brainstorm for game design, analyze phenomenon, graphic design, and interaction design.  
+					</p>
+				</div>
+				<h1>ethnography</h1>
+				<div class="projectContent wrap">
+					<div class="grid wrap">
+						<p class="grid-item">
+							The whole project begins with a survey online to get response from SFU Cheerleading members. By asking general questions, we can get a genernal design focus. Then by interview face to face, we got a deeper thinking about problems that need to be solved. 
+						</p>
+						<img class="grid-item toggleImg" alt="project2" src="img/e.jpg">
+					</div>
+				</div>	
+				<h1>persona</h1>
+				<div class="projectContent wrap">	
+					<div class="grid wrap">
+						<p class="grid-item">
+							This persona is designed based on ethnography data that we did before. To summarize and integrate data, we found the most of members usually enjoy doing exercise and making friends in their daily life. Their goals to attend SFU Cheerleading club are to keep fit and self-discipline.<br><br> 
+							For this person design, it keeps unity on both font and color palette. Also, Icons group composition together and it is easy for viewers to understand. Clear hierchy and separate sections make viewers easy to eye-catching. All of design details contribe to an appealing work.  
+						</p>	
+						<img class="grid-item" id="personaImg" alt="project2" src="img/persona.jpg">
+					</div>	
+				</div>
+				<h1>cultural probes</h1>
+				<div class="projectContent wrap">
+					<div class="grid wrap">
+						<p class="grid-item">
+						By designing interesting games which are indirectly related to our design focus, we could analyze subconsciousness of members after we received response from culture probes. Hence, we got a deeper understanding about their problems and goals that they were unsatisfied with existing prensence of SFU Cheerleading. Also, they are sometimes tired of workout.   
+						</p>
+						<img class="grid-item toggleImg" alt="cultural probe" src="img/probe.jpg">
+					</div>
+				</div>
+				<h1>Informance Video</h1>
+				<div class="projectContent wrap">
+					<!-- insert videos learnt from https://www.w3schools.com/html/html5_video.asp -->
+					<video class="video" controls>
+						<source src="img/SFUCheer.mp4" type="video/mp4">
+						Hoops, your browser does not support the video tag.
+					</video>
+					<br>
+					<p class="grid-item">
+						This video is made of three short scenarios, which depict three main problems that SFU Cheerleading lacks a main communnication channel, it does not have enough advertisement in the nuiversity, and members of this club do not have enough stimulation to continue on workout. 
+					</p>
+				</div>
+				<h1>Participatory Workshop</h1>
+				<div class="projectContent wrap">
+					<div class="grid wrap">
+						<p class="grid-item">
+							According to questions we found, we set three main activities for this participatory workshop which was hold on gym on Sunday. This gave Cheer members an opportunity to discuss problems and told us what they think should got improved.  
+						</p>
+						<img class="grid-item toggleImg" alt="workshop image" src="img/workshop.jpg">
+					</div>
+				</div>
+				<h1>showcase</h1>
+				<div class="projectContent wrap">
+					<p class="grid-item">
+						Oops ... <br>
+						It is coming!
+					</p>
+				</div>
+				<h1>reflection</h1>
+				<div class="projectContent wrap">
+					<p class="grid-item">
+						IAT 333 is a very targeted practical class. We observed targeted users and took place of them to think about their problems. It is helpful for us to practice how to design a product in a business company. In other words, we learnt design thinking process by doing this project during a whole term.<br><br>
+						However, we also made mistakes when we tried to achieve design goals. For instance, we always jumped between different design goals if we found one could not find more fresh information. Hence, we did not transfer well from general observation to narraow design focus. I am pity that this project looks shallow.<br><br>
+						Additionally, the cultural probe is not expected to be plain and boring. It is better to develop more with 3D stuff such as 3D printing, attractive package boxes, and creative craft.
+					</p>
+				</div>
+			</div>
+			<!-- pink bar as decoration -->
+			<div class="bar"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		<br><br>
+		<!-- content end -->
+		<div>
+			<span class="footage middle">Copyright © 2017. All rights reserved by RUXUE LIU</span>
+		</div>
+	</body>
+</html>
