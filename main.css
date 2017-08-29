@@ -7,7 +7,7 @@ body.greyBK{
 	background: linear-gradient(to bottom, #e1e2e6, #ffffff);
 }
 body{
-	font-family: 'Gudea', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 }
 .grid{
 	display:flex;
@@ -20,7 +20,8 @@ body{
 }
 h1,.figcationLogo,#figcationLogo{
 	font-size:1.3em;
-	letter-spacing: 0.3em;
+	font-weight: 500;
+	letter-spacing: 0.8em;
 	text-transform:uppercase;
 	text-align: center;
 }
@@ -28,7 +29,7 @@ span{
 	letter-spacing: 0.15em;
 	color:#58595b;
 	font-kerning:normal;
-	font-weight: bolder;
+	font-weight: 600;
 	font-style: italic;
 	text-align: center;
 	padding: 0.3em;
@@ -55,7 +56,7 @@ p{
 	text-align:left;
 	margin:auto;
 	font-size: 1em;
-	font-weight:100;
+	font-weight:200;
 	letter-spacing:0.1em;
 	word-spacing: 0.1em;
 	stroke-linecap:2em;
@@ -71,13 +72,14 @@ li{
 	margin:auto;
 }
 li a{
-	font-size: 0.7em;
+	font-size: 1em;
+	letter-spacing: 0.3em;
 	color:#58595b;
 	text-transform: uppercase;
 	transition: 1s;
 }
 li a:hover{
-	letter-spacing:0.2em;
+	letter-spacing:1em;
 	transition: 0.6s ease-in-out;
 }
 #homepageContainer{
@@ -106,21 +108,17 @@ img{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#top-nav{
-	writing-mode: horizontal-tb;
-	width:100%;
-	height:10%;
-}
 #left-nav{
 	writing-mode: vertical-lr;
+	margin-left:0.5em;
 	width:20%;
-	height:80%;
-	
+	height:90%;
 }	
 #right-nav{
 	writing-mode:vertical-lr;
+	margin-right:0.5em;
 	width:20%;
-	height:80%;
+	height:90%;
 	transform: rotate(180deg);
 }
 #bottom-nav{
@@ -220,7 +218,7 @@ https://css-tricks.com/svg-line-animation-works/*/
 }
 /*learnt from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
 .nav_link:hover,.nav_link:visited,.nav_link:active{
-	letter-spacing: 1.2em;
+	letter-spacing: 2em;
 	transition: 0.8s ease-in-out;
 }
 .intext_link:hover,.intext_link:visited,.intext_link:active{
