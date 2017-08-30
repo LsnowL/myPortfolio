@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Portfolio Home</title> 
+		<meta charset="utf-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<link href="main.css" rel="stylesheet">
+		<link href="normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <!-- Toggle class learnt from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_toggleclass -->
+		<script>
+			$(document).ready(function(){
+			    $(".toggleImg,#personaImg").click(function(){
+			        $(this).toggleClass("toggle");
+			    });
+			});
+		</script>
+	</head>
+	<body>
+		<div class="navigation grid">
+			<a class="grid-item logo" href="index.html"><img src="img/logo.png" alt="myLogo"></a>
+		</div>
+		<div class="content grid wrap">
+				<figure>
+					<img src="img/bay.png" alt="bayMax">
+					<figcaption>BayMax's Container<br>August 2016
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img src="img/call.png" alt="The Call">
+					<figcaption>The call<br>December 2016
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img src="img/bus.png" alt="myLogo">
+					<figcaption>Little Bus Toy<br>April 2017
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img src="img/4.jpg" alt="book cover">
+					<figcaption>Book Cover<br>January 2017
+					</figcaption>
+				</figure>
+				
+				<figure>
+					<img src="img/2.jpg" alt="magazine">
+					<figcaption>Magazine<br>February 2017
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img src="img/3.jpg" alt="persona">
+					<figcaption>Persona<br>July 2017
+					</figcaption>
+				</figure>				
+		</div>
+		<div class="footage">
+			<!-- about this website start -->			
+			<ul class="grid">
+				<li><a href="mailto:rla81@sfu.ca">rla81@sfu.ca</a><br><br></li>
+			</ul>			
+			<!-- about this website end -->
+		</div>
+	</body>
+</html>
